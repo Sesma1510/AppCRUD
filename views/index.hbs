@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SteamCharts</title>
+
+  <!-- 
+    - favicon link
+  -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+<header class="header">
+
+    <!-- 
+      - overlay
+    -->
+    <div class="overlay" data-overlay></div>
+
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="/images/steam-logo.png" alt="Steam Logo">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-nav>
+
+        <div class="navbar-top">
+           <button class="btn-sign_in">
+
+
+             {{#if is_logged}}
+                 
+              <a href="/profile" style="color: #FFFFFF;">{{user.username}}#{{user.discriminator}}</a>
+            {{else}}
+    <img src="/images/steam-logo.png" ></img>
+                {{/if}}
+        </button>
+          <button class="nav-close-btn" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#hero" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+ 
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="btn-sign_in">
+
+          <div class="icon-box">
+              {{#if is_logged}}
+              <img src="https://cdn.discordapp.com/avatars/{{user.id}}/{{user.avatar}}.png?size=512%" ></img>
+            {{else}}
+  <ion-icon name="log-in-outline"></ion-icon>
+                {{/if}}
+            
+          </div>
+
+             {{#if is_logged}}
+              <span>{{user.username}}#{{user.discriminator}}</span>
+            {{else}}
+  <span><a href="/auth/signup" style="color: #FFFFFF;">Sign-in</a></span>
+  <span><a href="/auth/login" style="color: #FFFFFF;">Log-in</a></span>
+                {{/if}}
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+      <main>
+    <article>
+
+      <section class="hero" id="hero">
+        <div class="container">
+
+          <p class="hero-subtitle">For &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+
+          <h1 class="h1 hero-title">Steam</h1>
+
+          <div class="btn-group">
+
+ {{#if is_logged}}
+     <button class="btn btn-link">Dashboard</button>
+            {{else}}
+                <a href="/auth/login" class="btn btn-primary"><span>Login</span>
+              <ion-icon name="enter-outline"></ion-icon>
+            </a>
+                {{/if}}
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <div class="section-wrapper">
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-top">
+  <div class="container">
+
+    <div class="footer-brand-wrapper">
+
+      <a href="#" class="logo">
+        <img src="/images/pngegg.png" alt="logo">
+      </a>
+
+      <div class="footer-menu-wrapper">
+
+        <ul class="footer-menu-list">
+
+          <li>
+            <a href="#hero" class="footer-menu-link">Home</a>
+          </li>
+
+          <li>
+            {{#if is_logged}}
+         <a href="/" class="footer-menu-link">Logout</a>
+        {{else}}
+<a href="/auth/login" class="footer-menu-link">Login</a>
+{{/if}}
+</li>
+        </ul>
+
+        <div class="footer-input-wrapper">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="footer-bottom">
+  <div class="container">
+    <p class="linkText">
+      <a href="#">Chill App</a>
+    </p>
+  </div>
+</div>
+ </footer>
+
