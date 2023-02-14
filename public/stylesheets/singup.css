@@ -2,9 +2,6 @@ body{
 	margin:0;
 	color:gray;
     background: rgba(22, 1, 85, 0.761);
-
-
-
 	font:600 16px/18px 'Open Sans',sans-serif;
 }
 *,:after,:before{box-sizing:border-box}
