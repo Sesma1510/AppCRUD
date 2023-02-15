@@ -5,6 +5,8 @@ require("dotenv").config();
 // ℹ️ Connects to the database
 require("./db");
 
+const moment = require("moment");
+
 // Handles http requests (express is node js framework)
 // https://www.npmjs.com/package/express
 const express = require("express");
@@ -12,6 +14,10 @@ const express = require("express");
 // Handles the handlebars
 // https://www.npmjs.com/package/hbs
 const hbs = require("hbs");
+//* Formato Fecha
+hbs.registerHelper("formatoFecha", (date) => {
+  return moment(date).format("DD/MM/YYYY");
+});
 
 const app = express();
 
