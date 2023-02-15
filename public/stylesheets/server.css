@@ -14,18 +14,20 @@
   font-display: swap;
 }
 body {
-  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  background: linear-gradient(to right, #200107, #4a0b81, #1d0111);
+
   color: #fff;
   overflow-x: hidden;
   font-family: "Euclid Circular B Medium", Poppins;
 }
 .card {
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(11, 12, 88, 0.35);
+  background: url(https://cutewallpaper.org/cdn-cgi/mirage/2af0adefb1b7ebf6af3b94bf8b86378693ec8b55d34af727ac0cbb58dfd044f5/1280/28/cool-colorful-gaming-wallpaper/742722417.jpg);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(0, 0, 4, 0.18);
   z-index: 2;
 }
 @media (min-width: 991.98px) {
