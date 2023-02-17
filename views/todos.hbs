@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card ">
+        <div class="card-content section ">
+          <h3><i class="material-icons">assignment</i> To-do's</h3>
+          <ul>
+          {{#each todos}}
+            <li class="todoItem" data-id="{{_id}}">
+              <span class="{{#if completed}}completed{{else}}not{{/if}}">{{todo}}</span>
+                <span>
+                  Time until date: {{interval}} - Due date:
+                  {{formatDate dueDate "MM/DD/YYYY"}}
+                </span>
+              <span class="del"><i class="material-icons">highlight_off</i></span>
+             </li>
+          {{/each}}
+          </ul>
+
+          <h5>{{user.userName}} has {{left}} things left to do.</h5>
+
+          <h5>Add To do's:</h5>
+
+          <form action="/todos/createTodo" method="POST">
+            <input type="text" placeholder="Enter To do Item" name="todoItem" required />
+            <input type="date" placeholder="Due date" name="dueDate" id="due" />
+            <input type="submit" placeholder="Add" />
+          </form>
+          <div class="flex">
+            <div class="flex-end">
+              <a class="waves-effect waves-light btn-small" href="/logout"
+                ><i class="material-icons right">keyboard_backspace</i>Logout</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/stylesheets/signup.css"/>
+<link rel="stylesheet" href="/css/signup.css" />
 <div class="login-wrap" id="form">
-  <form action="/auth/signup" method="POST" class="login-html">
+  <form action="/signup" method="POST" class="login-html">
     <input id="tab-2" type="radio" name="tab" class="sign-up" checked /><label
       for="tab-2"
       class="tab"
@@ -9,7 +9,7 @@
       <div class="sign-up-htm">
         <div class="group">
           <label for="user" class="label">Username</label>
-          <input id="user" type="text" class="input" name="username" />
+          <input id="user" type="text" class="input" name="userName" />
         </div>
         <div class="group">
           <label for="pass" class="label">Password</label>
@@ -19,6 +19,16 @@
             class="input"
             data-type="password"
             name="password"
+          />
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Password</label>
+          <input
+            id="pass"
+            type="password"
+            class="input"
+            data-type="password"
+            name="confirmPassword"
           />
         </div>
         <div class="group">
@@ -32,12 +42,16 @@
         </div>
         <div class="hr"></div>
         <div class="foot-lnk">
-          <a href="/auth/login">
-            <label for="tab-1" style="font-size: 24px; color:white">Already Member? </label>
+          <a href="/login">
+            <label for="tab-1" style="font-size: 24px; color:white">Already
+              Member?
+            </label>
           </a>
         </div>
       </div>
     </div>
   </form>
 </div>
-
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+></script>

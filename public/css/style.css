@@ -1,0 +1,54 @@
+body {
+  /* background-image: url(/images/city-background.jpg); */
+  background-image: linear-gradient(to right, #c5c2f3, #3d0657);
+  background-size: cover;
+  height: 100vh;
+  /* background-repeat: no-repeat; */
+}
+
+.todoItem {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flex- {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainTitle {
+  font-size: 5rem;
+  margin: 15% 0 0 0;
+  color: black;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.not {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+
+.card,
+.content-section {
+  background-image: linear-gradient(to right, #c5c2f3, #243a63);
+}

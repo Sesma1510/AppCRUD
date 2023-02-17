@@ -9,8 +9,8 @@
 
 :root {
   /**
-   * colors
-   */
+     * colors
+     */
 
   --raisin-black-1: #131833;
   --raisin-black-2: #131833;
@@ -24,8 +24,8 @@
   --onyx: hsl(240, 5%, 26%);
 
   /**
-   * typography
-   */
+     * typography
+     */
 
   --ff-refault: "Refault", Georgia;
   --ff-oswald: "Oswald", sans-serif;
@@ -47,22 +47,22 @@
   --fw-700: 700;
 
   /**
-   * transition
-   */
+     * transition
+     */
 
   --transition-1: 0.15s ease-in-out;
   --transition-2: 0.15s ease-in;
   --transition-3: 0.25s ease-out;
 
   /**
-   * spacing
-   */
+     * spacing
+     */
 
   --section-padding: 60px;
 
   /**
-   * clip path
-   */
+     * clip path
+     */
 
   --polygon-1: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);
   --polygon-2: polygon(0 0, 100% 0%, 82% 100%, 0% 100%);
@@ -71,8 +71,8 @@
 }
 
 /*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
+    #RESET
+  \*-----------------------------------*/
 
 *,
 *::before,
@@ -139,8 +139,8 @@ body.active {
 }
 
 /*-----------------------------------*\
-  #CUSTOM FONT
-\*-----------------------------------*/
+    #CUSTOM FONT
+  \*-----------------------------------*/
 
 /* Webfont: Refault-Italic */
 @font-face {
@@ -156,8 +156,8 @@ body.active {
 }
 
 /*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
+    #REUSED STYLE
+  \*-----------------------------------*/
 
 .container {
   padding-inline: 15px;
@@ -169,6 +169,7 @@ body.active {
   font-size: var(--fs-1);
   font-weight: var(--fw-400);
   text-transform: uppercase;
+  width: max-content;
 }
 
 .h2 {
@@ -258,8 +259,8 @@ body.active {
 }
 
 /*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
+    #HEADER
+  \*-----------------------------------*/
 .gradient-custom {
   /* fallback for old browsers */
   background: #6a11cb;
@@ -393,8 +394,8 @@ body.active {
 }
 
 /*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
+    #HERO
+  \*-----------------------------------*/
 
 .hero {
   background: url("../images/pxfuel.jpg") no-repeat;
@@ -437,8 +438,8 @@ body.active {
 }
 
 /*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
+    #FOOTER
+  \*-----------------------------------*/
 
 .footer-top {
   background: url("../images/footer-bg.jpg") no-repeat;
@@ -606,8 +607,8 @@ body.active {
 }
 
 /*-----------------------------------*\
-  #GO TO TOP
-\*-----------------------------------*/
+    #GO TO TOP
+  \*-----------------------------------*/
 
 .go-top {
   --polygon-1: polygon(70% 0, 100% 30%, 100% 100%, 30% 100%, 0 70%, 0 0);
@@ -634,22 +635,22 @@ body.active {
 }
 
 /*-----------------------------------*\
-  #RESPONSIVE
-\*-----------------------------------*/
+    #RESPONSIVE
+  \*-----------------------------------*/
 
 /**
- * responsive larger than 420px
- */
+   * responsive larger than 420px
+   */
 
 @media (min-width: 420px) {
   /**
-   * CUSTOM PROPERTY
-   */
+     * CUSTOM PROPERTY
+     */
 
   :root {
     /**
-     * typography
-     */
+       * typography
+       */
 
     --fs-1: 70px;
   }
@@ -664,26 +665,26 @@ body.active {
 }
 
 /**
- * responsive larger than 575px
- */
+   * responsive larger than 575px
+   */
 
 @media (min-width: 575px) {
   /**
-   * CUSTOM PROPERTY
-   */
+     * CUSTOM PROPERTY
+     */
 
   :root {
     /**
-     * typography
-     */
+       * typography
+       */
 
     --fs-1: 90px;
     --fs-2: 45px;
   }
 
   /**
-   * REUSED STYLE
-   */
+     * REUSED STYLE
+     */
 
   .container {
     max-width: 540px;
@@ -700,26 +701,26 @@ body.active {
 }
 
 /**
- * responsive larger than 768px
- */
+   * responsive larger than 768px
+   */
 
 @media (min-width: 768px) {
   /**
-   * CUSTOM PROPERTY
-   */
+     * CUSTOM PROPERTY
+     */
 
   :root {
     /**
-     * typography
-     */
+       * typography
+       */
 
     --fs-1: 115px;
     --fs-3: 36px;
   }
 
   /**
-   * REUSED STYLE
-   */
+     * REUSED STYLE
+     */
 
   .container {
     max-width: 700px;
@@ -730,8 +731,8 @@ body.active {
   }
 
   /**
-   * HEADER
-   */
+     * HEADER
+     */
 
   .header::after,
   .header::before {
@@ -754,8 +755,8 @@ body.active {
   }
 
   /**
-   * HERO
-   */
+     * HERO
+     */
 
   .hero-subtitle {
     --fs-7: 25px;
@@ -767,8 +768,8 @@ body.active {
   }
 
   /**
-   * FOOTER
-   */
+     * FOOTER
+     */
 
   .footer-menu-wrapper,
   .footer-quicklinks,
@@ -805,25 +806,25 @@ body.active {
 }
 
 /**
- * responsive larger than 1024px
- */
+   * responsive larger than 1024px
+   */
 
 @media (min-width: 1024px) {
   /**
-   * CUSTOM PROPERTY
-   */
+     * CUSTOM PROPERTY
+     */
 
   :root {
     /**
-     * spacing
-     */
+       * spacing
+       */
 
     --section-padding: 100px;
   }
 
   /**
-   * REUSED STYLE
-   */
+     * REUSED STYLE
+     */
 
   .container {
     max-width: 1000px;
@@ -834,8 +835,8 @@ body.active {
   }
 
   /**
-   * HEADER 
-   */
+     * HEADER 
+     */
 
   .header {
     padding-block: 0;
@@ -988,8 +989,8 @@ body.active {
   }
 
   /**
-   * FOOTER
-   */
+     * FOOTER
+     */
 
   .footer-brand-wrapper {
     display: flex;
@@ -1018,49 +1019,49 @@ body.active {
 }
 
 /**
- * responsive larger than 1200px
- */
+   * responsive larger than 1200px
+   */
 
 @media (min-width: 1200px) {
   /**
-   * CUSTOM PROPERTY
-   */
+     * CUSTOM PROPERTY
+     */
 
   :root {
     /**
-     * typography
-     */
+       * typography
+       */
 
     --fs-1: 150px;
   }
 
   /**
-   * REUSED STYLE
-   */
+     * REUSED STYLE
+     */
 
   .container {
     max-width: 1200px;
   }
 
   /**
-   * HEADER
-   */
+     * HEADER
+     */
 
   .navbar-link {
     padding-block: 45px;
   }
 
   /**
-   * HERO
-   */
+     * HERO
+     */
 
   .hero {
     margin-top: 110px;
   }
 
   /**
-   * FOOTER
-   */
+     * FOOTER
+     */
 
   .footer-menu-wrapper {
     flex-grow: 1;

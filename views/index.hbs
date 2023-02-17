@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ChillBot</title>
+    <title>Re-Member</title>
 
     <!-- 
     - favicon link
@@ -14,7 +14,7 @@
     <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/css/homepage.css" />
     <!-- 
     - google font link
   -->
@@ -27,7 +27,6 @@
   </head>
 
   <body id="top">
-
     <!-- 
     - #HEADER
   -->
@@ -104,14 +103,8 @@
 
             {{#unless userInSession}}
               <span>{{userInSession.username}}</span>
-              <span><a
-                  href="/auth/signup"
-                  style="color: #FFFFFF;"
-                >Sign-in</a></span>
-              <span><a
-                  href="/auth/login"
-                  style="color: #FFFFFF;"
-                >Log-in</a></span>
+              <span><a href="/signup" style="color: #FFFFFF;">Sign-in</a></span>
+              <span><a href="/login" style="color: #FFFFFF;">Log-in</a></span>
             {{/unless}}
           </button>
 
@@ -130,10 +123,10 @@
         <section class="hero" id="hero">
           <div class="container">
 
-            <p class="hero-subtitle">Music Bot &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp;</p>
+            <p class="hero-subtitle">To &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;</p>
 
-            <h1 class="h1 hero-title">Chill-Bot</h1>
+            <h1 class="h1 hero-title">Re-Member</h1>
 
             <div class="btn-group">
 
@@ -143,7 +136,7 @@
                   <ion-icon name="enter-outline"></ion-icon>
                 </a>
               {{else}}
-                <a href="/auth/login" class="btn btn-primary"><span>Login</span>
+                <a href="/login" class="btn btn-primary"><span>Login</span>
                   <ion-icon name="enter-outline"></ion-icon>
                 </a>
               {{/if}}
@@ -182,7 +175,7 @@
                   {{#if userInSession}}
                     <a href="/" class="footer-menu-link">Logout</a>
                   {{else}}
-                    <a href="/auth/login" class="footer-menu-link">Login</a>
+                    <a href="/login" class="footer-menu-link">Login</a>
                   {{/if}}
                 </li>
               </ul>
